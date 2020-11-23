@@ -1,0 +1,40 @@
+:root {
+  --color-red: #E50914;
+  --color-black: #141414;
+  --color-gray: #AAA;
+  --color-white: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-black);
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container .logo {
+  margin-left: 5px;
+  color: var(--color-red);
+  font-weight: bold;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--color-gray);
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: var(--color-white);
+}
