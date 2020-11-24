@@ -1,8 +1,11 @@
 :root {
-  --color-red: #E50914;
-  --color-black: #141414;
-  --color-gray: #AAA;
-  --color-white: #FFF;
+  --bg-primary: #141414;
+  --bg-secundary: rgba(0, 0, 0, .5);
+  --bg-tertiary: #FFF;
+  --text-primary: #E50914;
+  --text-secundary: #AAA;
+  --text-tertiary: #FFF;
+  --text-quaternary: #141414;
 }
 
 * {
@@ -11,9 +14,12 @@
   box-sizing: border-box;
 }
 
+/* base element*/
+
 body {
-  background: var(--color-black);
+  background: var(--bg-primary);
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color: var(--text-tertiary);
 }
 
 header .container {
@@ -22,19 +28,79 @@ header .container {
   justify-content: space-between;
 }
 
+.container {
+  margin-left: 20px;
+}
+
 header .container .logo {
   margin-left: 5px;
-  color: var(--color-red);
+  color: var(--text-primary);
   font-weight: bold;
   font-size: 40px;
 }
 
 header nav a {
   text-decoration: none;
-  color: var(--color-gray);
+  color: var(--text-secundary);
   margin-right: 10px;
 }
 
 header nav a:hover {
-  color: var(--color-white);
+  color: var(--text-tertiary);
+}
+
+/* main movie */
+
+main .main-movie {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url('/images/movie-mandalorian.jpg');
+  
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main-movie .container {
+  width: 70%;
+}
+
+.main-movie .container .title {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.main-movie .container .description {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.container .buttons .button {
+  background-color: var(--bg-secundary);
+  border-radius: 5px;
+  border: 1px solid transparent;
+  color: var(--text-tertiary);
+
+  padding: 15px 30px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.container .buttons .button:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--text-quaternary);
+}
+
+.buttons button:nth-child(2) {
+  margin-left: 15px;
+}
+
+.buttons .button i {
+  margin-right: 8px;
 }
