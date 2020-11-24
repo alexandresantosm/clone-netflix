@@ -118,3 +118,47 @@ body .carousel-movie {
   width: 100%;
   display: block;
 }
+
+/* support */
+
+section.support {
+  margin-top: 5px;
+}
+
+.support .container h4 {
+  font-size: 40px;
+}
+
+.support .container .support-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .support-list .logo-dio {
+  margin-right: 45px;
+}
+
+.container .support-list .profile-felipe {
+  margin-right: 5px;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+
+/* footer */
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+footer .container i {
+  margin-right: 8px;
+}
