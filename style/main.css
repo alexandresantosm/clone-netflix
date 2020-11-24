@@ -8,6 +8,8 @@
   --text-quaternary: #141414;
 }
 
+/* reset css default */
+
 * {
   margin: 0;
   padding: 0;
@@ -103,4 +105,16 @@ main .main-movie {
 
 .buttons .button i {
   margin-right: 8px;
+}
+
+/* carousel */
+
+body .carousel-movie {
+  margin-top: 5px;
+}
+
+.carousel-movie .item .box-movie {
+  height: 100%;
+  width: 100%;
+  display: block;
 }
